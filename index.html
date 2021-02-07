@@ -4,40 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="device-width", initial-scale=1.0>
   <title>Form.</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>
 </head>
 <body id="register">
+  <!--Navbar-->
 <div>
       <nav id="navbar">
         <img src="miraicon.png" style="float: left; width: 50px; height: 50px;"/>
         <h2><a href="#home"><span class="text-primary">Mira Technologies</span></a></h2>
         <ul>
-          <li><a href="#register">Register</a></li>
+         <a href="#register">Register</a>
         </ul>
       </nav>
 </div>
+<!--Showcase Area-->
 <div>
-     <nav id="login">
+     <nav id="showcase">
   <img src="miraicon.png" class="center">
-  <span class="login">Login</span>
-  <span class="login">Login to your account</span>
+  <span class="showcase">Login</span>
+  <span class="showcase">Login to your account</span>
      </nav>
 </div>
-<div>
+<!--Section: Contact-->
+<section id="contact" class="bg-=light">
+  <div class="container">
       <nav id="form">
  <form>
-   <div>
-    <label> Email : </label>
-    <input>
+   <div class="form-group">
+     <label for="email">Email</label>
+     <input type="email">
    </div>
-   <div>
-    <label>  Password :</label>
-    <input>
+   <div class="form-group">
+     <label for="password">Password</label>
+     <input type="password">
     </div>
-    <button>Submit</button>
- </form>
+    <input type="button"
+    onclick="myFuntion()"
+    value="LOGIN">
+  </form>
       </nav>
 </div>
+</section>
 </body>
 
 

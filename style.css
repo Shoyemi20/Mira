@@ -8,7 +8,7 @@
 body{
   font-family: Arial, sans-serif;
   line-height: 1.4;
-  color: #EDE7F6;
+  background: rgb(231, 228, 226);
   overflow-x: hidden;
 }
 
@@ -19,9 +19,18 @@ body{
 }
 
 .text-primary {
-  
   color: #fff;
   float: left;
+}
+
+.bg-light {
+  color: #fff;
+  background: rgb(231, 228, 226);
+}
+
+.bg-dark {
+  background: rgb(231, 228, 226);
+  color: #000000;
 }
 
 /* Navbar */
@@ -31,10 +40,46 @@ body{
   background: #1A237E;
   color: #fff;
   padding: 1.5rem 8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-decoration-color: #fff;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  text-emphasis-color: #ffffff;
+}
+
+#navbar  a:hover {
+  background-color: #000000;
+}
+
+.text-primary {
+  color: #fff;
+  float: left;
 }
 
 
+/* Showcase Area */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
 
+.showcase {
+  display: block;
+  color: #1A237E;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  text-align: center;
+}
 
 /* Login Area */
 .center {
@@ -44,26 +89,30 @@ body{
   width: 20%;
 }
 
-.login {
-  display: block;
-  color: #1A237E;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Form */
 .container {
   padding: 16px;
   background-color: #fff;
+  text-align: center;
 }
 .submitbtn {
-  background-color: #fff;
-  color: #1A237E;
-  padding: 16px 20px ;
-  margin: 8px 0;
+  font-family: sans-serif;
+  background-color: rgb(11, 33, 160);
+  color: rgb(9, 30, 255);
+  padding: 15px 30px ;
+  margin: 10px;
   border: none;
   width: 100%;
   opacity: 0.9;
+  box-shadow: .5px .5px 1px 2px #000000;
+  font-size: 20px;
+  outline: none;
 }
+
+#contact .submitbtn:hover {
+  background: #1A237E;
+}
+
+
+
+
+
